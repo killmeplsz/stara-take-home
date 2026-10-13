@@ -1,4 +1,3 @@
-"""Task 4: AI reply. Never raises: on any failure it returns the fallback reply."""
 import json
 import logging
 import os

@@ -1,4 +1,3 @@
-"""STARA mini backend: Customer -> API -> Database (Supabase/PostgreSQL) -> Automation -> AI -> Web."""
 import logging
 import os
 from datetime import datetime

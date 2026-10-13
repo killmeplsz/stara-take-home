@@ -1,4 +1,3 @@
-"""Database helper for PostgreSQL / Supabase (psycopg 3). Reads its settings from .env."""
 import os
 from pathlib import Path
 

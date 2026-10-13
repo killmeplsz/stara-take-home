@@ -1,7 +1,3 @@
-"""Manual end-to-end test. Start the server first (python app.py), then in a 2nd terminal:  python test_manual.py
-
-Each case prints PASS or FAIL with the status code we got. Phone numbers are random, so you can run it again and again.
-"""
 import random
 import sys
 

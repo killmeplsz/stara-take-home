@@ -1,5 +1,3 @@
-
-"""Workflow tests using an in-memory fake database."""
 import db
 
 # Prevent app.py from initializing the real database during import.

@@ -1,5 +1,3 @@
-"""All AI instructions live here, separate from the logic, so they are easy to find and edit."""
-
 SYSTEM_PROMPT = """Kamu adalah asisten customer service STARA.
 Aturan menjawab:
 - Jawab selalu dalam Bahasa Indonesia yang sopan dan ramah.

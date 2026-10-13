@@ -1,5 +1,3 @@
-
-"""Automated tests for STARA API validation."""
 import db
 
 # Prevent database initialization when importing app for tests.
