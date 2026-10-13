@@ -1,0 +1,32 @@
+* { box-sizing: border-box; }
+body { font-family: system-ui, sans-serif; margin: 0; background: #f4f5f7; color: #222; }
+header { background: #1f3a5f; color: #fff; padding: 12px 20px; }
+header h1 { margin: 0; font-size: 18px; }
+main { display: flex; gap: 16px; padding: 16px; align-items: flex-start; }
+section { background: #fff; border-radius: 8px; padding: 16px; box-shadow: 0 1px 3px rgba(0,0,0,.1); }
+#left { width: 340px; flex-shrink: 0; }
+#right { flex: 1; min-width: 0; }
+h2 { margin-top: 0; font-size: 16px; }
+form { display: flex; gap: 6px; flex-wrap: wrap; margin-bottom: 12px; }
+input, select, button { padding: 7px 9px; font-size: 14px; }
+input { flex: 1; min-width: 120px; }
+button { cursor: pointer; background: #1f3a5f; color: #fff; border: 0; border-radius: 4px; }
+button.danger { background: #b3261e; }
+ul { list-style: none; padding: 0; margin: 8px 0 0; }
+li { padding: 8px; border-bottom: 1px solid #eee; cursor: pointer; }
+li:hover, li.selected { background: #eaf0f8; }
+li .phone { color: #666; font-size: 13px; display: block; }
+.badge { font-size: 12px; padding: 2px 8px; border-radius: 10px; background: #ddd; margin-left: 6px; }
+.badge.lead { background: #fff3cd; }
+.badge.active { background: #d1f0d8; }
+.badge.inactive { background: #e2e3e5; }
+.detail-head { display: flex; justify-content: space-between; align-items: center; margin-bottom: 10px; }
+#detail-phone { color: #666; margin-left: 8px; }
+#messages { display: flex; flex-direction: column; gap: 6px; max-height: 420px; overflow-y: auto;
+            padding: 10px; background: #f0f2f5; border-radius: 6px; margin-bottom: 10px; }
+.msg { max-width: 75%; padding: 8px 10px; border-radius: 8px; white-space: pre-wrap; word-break: break-word; }
+.msg.incoming { background: #fff; align-self: flex-start; }
+.msg.outgoing { background: #d9fdd3; align-self: flex-end; }
+.msg small { display: block; color: #777; font-size: 11px; margin-top: 3px; }
+.error { color: #b3261e; min-height: 1em; margin: 6px 0 0; font-size: 14px; }
+.empty { color: #888; font-style: italic; }

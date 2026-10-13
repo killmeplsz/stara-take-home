@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>STARA Mini Dashboard</title>
+  <link rel="stylesheet" href="/static/style.css">
+</head>
+<body>
+  <header><h1>STARA Mini Dashboard</h1></header>
+
+  <main>
+    <section id="left">
+      <h2>Customers</h2>
+
+      <form id="add-form">
+        <input id="add-name" placeholder="Name" required>
+        <input id="add-phone" placeholder="Phone (081234567890)" required>
+        <select id="add-status">
+          <option value="lead">lead</option>
+          <option value="active">active</option>
+          <option value="inactive">inactive</option>
+        </select>
+        <button type="submit">Add customer</button>
+      </form>
+
+      <label>Filter:
+        <select id="filter">
+          <option value="">all</option>
+          <option value="lead">lead</option>
+          <option value="active">active</option>
+          <option value="inactive">inactive</option>
+        </select>
+      </label>
+
+      <p id="list-error" class="error"></p>
+      <ul id="customer-list"></ul>
+    </section>
+
+    <section id="right">
+      <h2>Conversation</h2>
+      <p id="placeholder">Select a customer on the left.</p>
+
+      <div id="detail" hidden>
+        <div class="detail-head">
+          <div>
+            <strong id="detail-name"></strong>
+            <span id="detail-phone"></span>
+            <span id="detail-status" class="badge"></span>
+          </div>
+          <button id="delete-btn" class="danger">Delete</button>
+        </div>
+
+        <div id="messages"></div>
+
+        <form id="test-form">
+          <input id="test-message" placeholder="Simulate an incoming WhatsApp message..." required>
+          <button type="submit">Send via webhook</button>
+        </form>
+        <p id="detail-error" class="error"></p>
+      </div>
+    </section>
+  </main>
+
+  <script src="/static/app.js"></script>
+</body>
+</html>
