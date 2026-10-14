@@ -172,11 +172,7 @@ Saya memakai Claude dan ChatGPT, dan sebagian besar kode awal proyek ini ditulis
 
 **Dikerjakan, diputuskan, atau diperbaiki sendiri**
 
-- Memilih Supabase, dan membuat serta mengatur project-nya: memakai _Session pooler_ setelah _direct connection_
-  _timeout_, serta memperbaiki `.env` (awalan `postgresql+psycopg://` tidak cocok dengan driver yang dipakai).
+- Melakukan setup untuk Supabase dan Docker
+- Memilih Supabase, dan membuat serta mengatur project-nya: memakai _Session pooler_ setelah _direct connection_timeout_, serta memperbaiki `.env` (awalan `postgresql+psycopg://` tidak cocok dengan driver yang dipakai).
 - Memperbaiki virtual environment yang rusak setelah folder dipindah, lalu memasang dependensi.
-- Men-debug Gemini: mengganti model karena `gemini-2.5-flash` tidak lagi tersedia untuk akun baru, menyesuaikan
-  timeout, dan membaca error `404`, `400`, `503`, `429`; lalu memutuskan memakai `mock` sebagai default dengan
-  tetap mempertahankan jalur fallback.
-- Memutuskan tidak mengerjakan bonus n8n dan autentikasi, lalu menjalankan semua endpoint, halaman web, dan
-  `test_manual.py`, serta memeriksa data di Supabase Table Editor.
+- Men-debug Gemini: mengganti model karena `gemini-2.5-flash` tidak lagi tersedia untuk akun baru, menyesuaikan timeout, dan membaca error `404`, `400`, `503`, `429`; lalu memutuskan memakai `mock` sebagai default dengan tetap mempertahankan jalur fallback.

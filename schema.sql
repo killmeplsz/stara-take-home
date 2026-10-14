@@ -1,6 +1,3 @@
--- STARA mini: schema for PostgreSQL (Supabase).
--- Run it in Supabase: SQL Editor -> New query -> paste -> Run. (app.py also runs it on startup; it is safe to repeat.)
-
 CREATE TABLE IF NOT EXISTS customers (
     id         BIGINT GENERATED ALWAYS AS IDENTITY PRIMARY KEY,
     name       TEXT NOT NULL,
