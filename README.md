@@ -169,6 +169,7 @@ Saya memakai Claude dan ChatGPT, dan sebagian besar kode awal proyek ini ditulis
 
 - Kerangka dan kode awal: `schema.sql`, `app.py` (CRUD, validasi, webhook), `ai.py`, `prompts.py`, halaman web, `test_manual.py`, dan file Docker.
 - Mencari solusi dari beberapa masalah selama pengerjaan
+- Membantu dalam testing otomatis
 
 **Dikerjakan, diputuskan, atau diperbaiki sendiri**
 

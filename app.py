@@ -6,13 +6,13 @@ from dotenv import load_dotenv
 
 load_dotenv()  # load .env BEFORE anything reads environment variables
 
-from flask import Flask, jsonify, request, send_from_directory  # noqa: E402
-from flask.json.provider import DefaultJSONProvider  # noqa: E402
-from psycopg.errors import UniqueViolation  # noqa: E402
-from werkzeug.exceptions import HTTPException  # noqa: E402
+from flask import Flask, jsonify, request, send_from_directory  
+from flask.json.provider import DefaultJSONProvider  
+from psycopg.errors import UniqueViolation  
+from werkzeug.exceptions import HTTPException  
 
-import ai  # noqa: E402
-import db  # noqa: E402
+import ai  
+import db  
 
 logging.basicConfig(level=logging.INFO)
 ALLOWED_STATUS = ("lead", "active", "inactive")
